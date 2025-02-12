@@ -1,0 +1,13 @@
+CompileFlags:
+    Add: [-DKIWI_WIN, -DKIWI_MSVC_COMPILER -DKIWI_SLOW_CODE]
+
+Diagnostics:
+  MissingIncludes: None
+  Suppress: [
+   -Wundefined-inline,
+   -Wwritable-strings,
+   -Wpragma-pack,
+   typecheck_invalid_lvalue_addrof,
+   misc-definitions-in-headers,
+   undeclared_var_use
+   ]
