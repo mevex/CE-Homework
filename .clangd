@@ -1,5 +1,5 @@
 CompileFlags:
-    Add: [-DKIWI_WIN, -DKIWI_MSVC_COMPILER -DKIWI_SLOW_CODE]
+    Add: []
 
 Diagnostics:
   MissingIncludes: None

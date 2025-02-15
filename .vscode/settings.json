@@ -41,8 +41,50 @@
     "typeinfo": "cpp"
   },
   "clangd.fallbackFlags": [
-    "-I${workspaceFolder}/include",
-    "-I${workspaceFolder}/src",
-    "-I${workspaceFolder}/glew=2.1.0/include",
-  ]
+    "-I${workspaceFolder}/common",
+    "-I${workspaceFolder}/8086-disassembler",
+  ],
+  "clangd.arguments": [
+    "-header-insertion=never"
+  ],
+  "todohighlight.isEnable": true,
+  "todohighlight.keywords": [
+    {
+      "text": "TODO",
+      "color": "red",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "overviewRulerColor": "rgba(0,0,0,0)"
+    },
+    {
+      "text": "HACK",
+      "color": "#ff6600",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "overviewRulerColor": "rgba(0,0,0,0)"
+    },
+    {
+      "text": "NOTE",
+      "color": "#7cfc00",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "overviewRulerColor": "rgba(0,0,0,0)"
+    },
+    {
+      "text": "IMPORTANT",
+      "color": "yellow",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "overviewRulerColor": "rgba(0,0,0,0)"
+    }
+  ],
+  "todohighlight.defaultStyle": {
+    "color": "red",
+    //"backgroundColor": "#ffab00",
+    "overviewRulerColor": "rgba(0,0,0,0)",
+    "isWholeLine": false,
+  },
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.cursorBlinking": true,
+  "editor.cursorSurroundingLines": 20,
 }

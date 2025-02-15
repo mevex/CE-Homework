@@ -1,7 +1,23 @@
 #include <stdio.h>
+#include <string.h>
 
-int main()
+#include "disassembler.cpp"
+
+int main(int ArgumentCount, char **Arguments)
 {
-    printf("Computer Enhance");
-    return 0;
+    if (ArgumentCount == 3)
+    {
+        if (!strcmp(Arguments[1], "dAsm"))
+        {
+            Disassemble(Arguments[2]);
+        }
+        else
+        {
+            printf("Usage: %s [Program Name] [Arguments]\n", Arguments[0]);
+        }
+    }
+    else
+    {
+        printf("Usage: %s [Program Name] [Arguments]\n", Arguments[0]);
+    }
 }

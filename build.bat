@@ -12,7 +12,7 @@ IF NOT EXIST build mkdir build
 
 pushd build
 
-SET IncludeFolders=
+SET IncludeFolders=/I..\common /I..\8086-disassembler
 SET IgnoredWarnings=
 SET Libraries=
 
