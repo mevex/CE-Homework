@@ -50,9 +50,6 @@ typedef i32 b32;
 
 #define CheckFlags(Flags, FlagsToCheck) ((Flags) & (FlagsToCheck))
 
-#define Str(X) #X
-#define StrV(X) Str(X)
-
 template <typename T>
 FORCEINLINE T Max(T A, T B)
 {

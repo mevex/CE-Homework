@@ -35,9 +35,10 @@ enum WordRegister
     DI
 };
 
-enum OpCodes
+enum InstructionType
 {
-    MOV = 0b100010
+    NOCODE = 0,
+    MOV
 };
 
 #endif // DISASSEMBLER_H

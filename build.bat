@@ -13,7 +13,7 @@ IF NOT EXIST build mkdir build
 pushd build
 
 SET IncludeFolders=/I..\common /I..\8086-disassembler
-SET IgnoredWarnings=
+SET IgnoredWarnings=/wd4189
 SET Libraries=
 
 SET CompilerFlags=/nologo /MTd /fp:fast /GR- /EHa- /Od /Oi /WX /W4 /FC /Zi %IncludeFolders% %Parameters% %IgnoredWarnings%
